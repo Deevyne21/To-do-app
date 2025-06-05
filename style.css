@@ -12,7 +12,7 @@ body {
 
 .app-container {
   width: 450px;
-  padding: 20px;
+  padding: 20px 30px;
   background: rgba(74, 144, 255, 0.8);
   /* background: rgba(128, 165, 100, 0.8); */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -115,4 +115,35 @@ h1 {
 
 .checkbox {
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .app-container {
+    width: 400px;
+    /* padding: 20px 30px; */
+  }
+
+  #filter {
+    padding: 0;
+    width: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    min-width: none;
+    min-height: none;
+  }
+  .app-container {
+    width: 300px;
+  }
+
+  #filter {
+    padding: 0;
+    width: 50px;
+  }
+
+  #taskInput {
+    width: 50px;
+  }
 }
